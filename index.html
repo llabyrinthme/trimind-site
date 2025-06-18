@@ -1,92 +1,66 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TRIMIND</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Montserrat', sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-900 text-white">
-    <!-- Topo com logo -->
-    <header class="py-4 bg-gray-900 text-center shadow z-50">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Trimind-logo.svg/512px-Trimind-logo.svg.png" alt="Logo TRIMIND" class="mx-auto h-14">
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIMIND - Transformação e Cura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo-trimind.png" alt="Logo TRIMIND" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Consultas</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Barra dourada com degradê -->
-    <nav class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 shadow-md">
-      <ul class="flex flex-wrap justify-center py-3 space-x-4 text-sm font-semibold text-gray-800">
-        <li><a href="#" class="hover:underline">Home</a></li>
-        <li><a href="#" class="hover:underline">Áudios de Hipnose</a></li>
-        <li><a href="#" class="hover:underline">Scripts de Hipnose</a></li>
-        <li><a href="#" class="hover:underline">Sobre</a></li>
-        <li><a href="#" class="hover:underline">Blog</a></li>
-        <li><a href="#" class="hover:underline">Suplementos</a></li>
-        <li><a href="#" class="hover:underline">Cursos</a></li>
-        <li><a href="#" class="hover:underline">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="barra-dourada">
+        <button>Cura da Criança Interior</button>
+        <button>Reprogramação Emocional</button>
+        <button>Prosperidade e Abundância</button>
+        <button>Corpo e Saúde</button>
+        <button>Autoestima e Relacionamentos</button>
+        <button>Meditações Espirituais</button>
+    </div>
 
-    <!-- Carrossel semelhante ao da Elaine Ourives -->
-    <section class="relative h-[520px] overflow-hidden">
-      <div class="absolute inset-0 flex transition-transform duration-700 ease-in-out">
-        <div class="w-full flex-shrink-0 bg-cover bg-center relative" style="background-image: url('https://via.placeholder.com/1600x520/f7e8a0/000000?text=Slide+1');">
-          <div class="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/30 px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-white drop-shadow mb-4">ACELERE SUA TRANSFORMAÇÃO</h2>
-            <p class="text-lg text-white max-w-xl">Comece hoje a manifestar o que você merece com a hipnose consciente.</p>
-            <button class="mt-6 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-2 rounded-full">QUERO MEU CAMINHO</button>
-          </div>
-        </div>
-      </div>
+    <div class="carousel">
+        <div class="slide">Você merece renascer em paz.</div>
+        <div class="slide">Transforme sua mente, corpo e alma com TRIMIND.</div>
+        <div class="slide">Cada sessão é um portal para a sua essência.</div>
+    </div>
+
+    <section class="cta">
+        <h2>Descubra a sua transformação interior</h2>
+        <button class="cta-button">Quero Começar Agora</button>
     </section>
 
-    <!-- Barra dourada fininha -->
-    <div class="w-full h-[10px] bg-gradient-to-r from-yellow-400 to-yellow-500"></div>
-
-    <!-- Ícones sobre fundo claro -->
-    <section class="bg-white py-12 px-6 grid md:grid-cols-4 gap-6 text-gray-800 text-center">
-      <div>
-        <div class="bg-black rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </div>
-        <h3 class="font-bold text-sm mb-2">CONTEÚDOS ESPECIAIS</h3>
-        <p class="text-xs mb-3">Material exclusivo para expansão mental e emocional.</p>
-        <button class="text-white bg-yellow-500 px-4 py-1 rounded text-xs">VER CONTEÚDOS</button>
-      </div>
-      <div>
-        <div class="bg-black rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 17L6 12.75l3.75-4.25m8.25 8.5L18 12.75l-3.75-4.25"/></svg>
-        </div>
-        <h3 class="font-bold text-sm mb-2">TREINAMENTOS ONLINE</h3>
-        <p class="text-xs mb-3">Mais de 20 sessões para desbloqueio pessoal.</p>
-        <button class="text-white bg-yellow-500 px-4 py-1 rounded text-xs">VER TREINAMENTOS</button>
-      </div>
-      <div>
-        <div class="bg-black rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 01-12 0 6 6 0 0112 0zM12 14a9 9 0 00-9 9h18a9 9 0 00-9-9z"/></svg>
-        </div>
-        <h3 class="font-bold text-sm mb-2">COMUNIDADE WHATSAPP</h3>
-        <p class="text-xs mb-3">Conteúdos e alertas diretamente no seu celular.</p>
-        <button class="text-white bg-yellow-500 px-4 py-1 rounded text-xs">ENTRAR NA COMUNIDADE</button>
-      </div>
-      <div>
-        <div class="bg-black rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2 4 4 8-8 2 2"/></svg>
-        </div>
-        <h3 class="font-bold text-sm mb-2">DEPOIMENTOS</h3>
-        <p class="text-xs mb-3">Veja o que alunos estão dizendo sobre suas conquistas.</p>
-        <button class="text-white bg-yellow-500 px-4 py-1 rounded text-xs">VER DEPOIMENTOS</button>
-      </div>
+    <section class="contact-form">
+        <h2>Entre em Contato</h2>
+        <form action="https://formspree.io/f/mnqezqkp" method="POST">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar mensagem</button>
+        </form>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="bg-gray-800 py-6 text-center text-sm text-gray-400">
-      © 2025 TRIMIND. Todos os direitos reservados.
+    <footer class="footer">
+        <p>&copy; 2025 TRIMIND. Todos os direitos reservados.</p>
     </footer>
-  </body>
+
+    <div class="social-bar">
+        <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="icon-whatsapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="icon-cart.png" alt="Carrinho"></a>
+    </div>
+</body>
 </html>
